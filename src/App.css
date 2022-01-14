@@ -1,38 +1,361 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Roboto:wght@300;400;500&display=swap');
+
+
+body{
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Headers */
+h1{
+  font-size: 4em;
+  border-bottom: solid #9273af 2px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 a{
+  color: #9273af;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main h2{
+  margin-bottom: 50px;
+  font-size: 2em;
+}
+
+aside h2{
+  margin-bottom: 0;
+}
+
+
+h3{
+  font-size: 1.6rem;
+}
+
+h1,h2, h3{
+  margin: 0;
+  font-family: 'Cinzel', serif;
+  color: #694888;
+}
+
+/* Paragraphs */
+p{
+  max-width: 60em;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Links */
+a{
+  text-decoration: none;
+  color: #694888;
+}
+
+a:hover{
+  color: #9273af;
+}
+
+/* Navigation */
+nav ul{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 7vw;
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+nav ul li{
+  padding: 0;
+}
+/* Header */
+header{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* Main */
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+/* Article */
+article{
+  display: flex;
+  justify-content: space-between;
+  max-width: 60em;
+  min-width: none;
+  gap: 50px;
+  margin: 50px 0;
+  white-space: pre-line;
+}
+
+/* images */
+img{
+  max-width: 200px;
+  height: 100%;
+  margin-top: 50px;
+}
+
+/* forms */
+form{
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  margin: 10px 0 50px 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+#newYears{
+  width: 100px;
+}
+
+input, select, textarea, button{
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: #f0e1ff;
+  font-family: 'Roboto', sans-serif;
+  border: solid #9273af 1px;
+}
+
+
+
+.updateDiv{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+
+/* Textarea */
+textarea{
+  resize: none;
+  height: 500px;
+}
+
+textarea::-webkit-scrollbar {
+  width: 1em;
+}
+
+textarea::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 8px #9273af;
+  box-shadow: inset 0 0 10px #9273af;
+}
+
+textarea::-webkit-scrollbar-thumb {
+background-color: rgb(171, 137, 194);
+}
+
+textarea::-webkit-scrollbar-button:single-button {
+  background-color: #ddc7ff;
+  display: block;
+  border-style: solid;
+  height: 15px;
+  width: 16px;
+}
+
+textarea::-webkit-scrollbar-button:single-button:vertical:decrement {
+  border-width: 0 8px 8px 8px;
+  border-color: transparent transparent rgb(171, 137, 194) transparent;
+}
+
+textarea::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+  border-color: transparent transparent rgb(69, 21, 102) transparent;
+}
+
+textarea::-webkit-scrollbar-button:single-button:vertical:increment {
+  border-width: 8px 8px 0 8px;
+  border-color: rgb(171, 137, 194) transparent transparent transparent;
+}
+
+textarea::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+  border-color:  rgb(69, 21, 102) transparent transparent transparent;
+}
+
+.loginForm{
+  margin-bottom: 400px;
+}
+
+/* Buttons */
+form button{
+  width: 100%;
+  margin: 25px 0 50px 0;
+}
+
+.logBtn{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: fit-content;
+  padding: 5px;
+  font-size: 14px;
+  color: #5b397c;
+}
+
+button{
+  width: 100px;
+}
+
+.closeBtn{
+  border-radius: 50px;
+  height: 2em;
+  width: 2em;
+  padding: 2px;
+  text-align: center;
+  margin: 0
+}
+
+button:hover{
+  cursor: pointer;
+  color: aliceblue;
+  background-color: rgb(115, 92, 136);
+}
+
+select{
+  width: fit-content;
+}
+
+
+/* Aside */
+.flex{
+  display: flex;
+}
+
+aside{
+  background-color: #f7eeff;
+  height: fit-content;
+  padding: 20px;
+  margin: 100px 0 0 4vw;
+}
+
+aside ul{
+  list-style: none;
+  padding: 0;
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+}
+
+aside ul li{
+  padding-bottom: 10px;
+}
+
+
+/* Startpage */
+.quoteDiv{
+  width: 20vw;
+  min-width: 400px;
+  background-image: url("images/maryrbeard.jpg");
+  background-size: cover;
+  background-position: right top;
+  height: fit-content;
+  margin: 3vw;
+  box-shadow: 5px 5px 5px #67617096;
+}
+
+.startSection{
+  margin-bottom: 50px;
+}
+
+.quoteDiv div{
+  font-size: 24px;
+  line-height: 1.5em;
+  padding: 20px;
+  padding-right: 40%;
+  padding-bottom: 70px;
+  background-color: #eedaff7e;
+  color: #433a52;
+}
+
+/* footer */
+footer{
+  background-color: #ddc7ff;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #5b397c;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/* Media query for under 800px */
+@media (max-width:800px){
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  /* Headings */
+  h1{
+    font-size: 10vw;
+    text-align: center;
+    margin-top: 50px;
   }
-  to {
-    transform: rotate(360deg);
+
+  h2{
+    text-align: center;
   }
+
+  /* Navigation */
+  nav ul{
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .flex{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* section */
+  section{
+    max-width: 90vw ;
+  }
+
+  /* paragraphs */
+  p{
+    max-width: 90vw;
+  }
+
+
+  /* Startpage */
+  .quoteDiv{
+    min-width: 80vw;
+  }
+
+  .quoteDiv div{
+    font-size: 20px;
+    padding: 10px;
+    background-color: #eee3f8af;
+  }
+
+  /* A-Z */
+  article{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .atozflex{
+    flex-direction: column-reverse;
+  }
+
+  /* aside */
+  aside{
+    margin: 0;
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+  }
+
+  aside h2{
+    text-align: left;
+  }
+
+  /* forms */
+  form{
+    width: 80vw;
+  }
+
+  .updateDiv{
+    margin-top: 10px;
+  }
+
 }

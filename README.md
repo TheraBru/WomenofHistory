@@ -1,70 +1,21 @@
-# Getting Started with Create React App
+# Women of History
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created as a school project to practice using React aswell as Express and MongoDB for backend development.
 
-## Available Scripts
+## Getting started
 
-In the project directory, you can run:
+To get this project working there are a couple of substeps that needs to be taken.
 
-### `npm start`
+### Required backend
+First of all you need a working api. You can find a git repo for the backend under the name of WomenofHistoryREST at my GitHub page. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+If you would like to create your own from the ground up you will need a NoSQL collection with documents containing schemas for name, years (born-died), quote, description, image (as a url) and category.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+You will need full CRUD for the api with GET functionality for both every document aswell as every document within a specific category.
 
-### `npm test`
+### Required changes in code
+In order for the website to work as intended you need to change a few things in the code. First of all you need to replace the < your api-url > in all fetches with the correct url to your api. The documents affected are: FetchAll.js, FetchCat.js, AddNewArticle.js, Article.js and Update.js.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You will also need to change the login settings to something that fit you. You could also change the hard-coded login into database driven (which would be preffered for the current solution.) The login settings are located in following documents: AddNewArticle.js, Login.js and LoginButton.js.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
